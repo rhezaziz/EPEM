@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f1c40f"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/skycraper"
+            android:title="Nama Perusahan" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/visitor"
+            android:title="Alamat Perusahan" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/bisnis"
+            android:title="Kontak" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/email2"
+            android:title="Email" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

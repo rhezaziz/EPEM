@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:id="@+id/delete"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_silang"
+                android:layout_marginLeft="275dp"
+                />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/foto"
+                android:src="@drawable/saya"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Produk  : "
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/textNamaPro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kursi"
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama kategori  : "
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:id="@+id/textNamaKat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mabel"
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deskripsi           : "
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/textIdPro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mab01"
+
+
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@android:color/black"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/ubahdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#fff"
+                        android:text="Ubah Data"
+                        android:background="#4bb6ef"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+     </LinearLayout>
+
+
+
+
+
+
+
+
+</android.support.v7.widget.CardView>

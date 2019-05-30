@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rheza.epem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/epem"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_admin"
+            android:label="DASHBOARD ADMIN"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kategori.Activity_kategori"
+            android:label="Kategori" />
+        <activity android:name=".Kategori.Activity_TambahKat" />
+        <activity
+            android:name=".Pesanan.Activity_pesanan"
+            android:label="PESANAN" />
+        <activity android:name=".Pesanan.Activity_TambahPes" />
+        <activity android:name=".InfoDiri.Activity_dataDiri" />
+        <activity android:name=".Produk.Activity_produk" />
+        <activity android:name=".Produk.Activity_tambahPro" />
+        <activity android:name=".Testimoni.Activity_testimoni" />
+        <activity android:name=".Kategori2.Activity_pilih" />
+    </application>
+
+</manifest>

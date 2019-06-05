@@ -130,7 +130,8 @@ public class Activity_kategori extends AppCompatActivity {
 
                 dialog.setNegativeButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(DialogInterface dialogCancel, int which) {
+                        dialogCancel.dismiss();
                         proggresView();
                         if (TextUtils.isEmpty(textJenis.getText())) {
                             new AlertDialog.Builder(mContext)
@@ -174,8 +175,8 @@ public class Activity_kategori extends AppCompatActivity {
 
                 }).setPositiveButton("Batal", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
+                    public void onClick(DialogInterface dialogCancel, int which) {
+                        dialogCancel.dismiss();
                     }
                 }).show();
 

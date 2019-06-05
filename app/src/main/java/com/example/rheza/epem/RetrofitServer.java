@@ -1,5 +1,6 @@
 package com.example.rheza.epem;
 
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -11,8 +12,10 @@ public class RetrofitServer {
     private Retrofit retrofit;
 
     private RetrofitServer(){
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().build();
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
+                .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }

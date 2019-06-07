@@ -32,7 +32,7 @@ public interface RegisterAPI {
     @GET("web_EPEM/api/getKategoriJenis?id_jenis_kategori=JK01")
     Call<List<ListKat>> percobaan();
 
-    @GET("web_EPEM/api/getKategoriJenis?id_jenis_kategori=JK02")
+    @GET("admin-epem/api/getKategoriJenis?id_jenis_kategori=JK02")
     Call<List<ListKat>> coba();
 //
 //    @GET("web_EPEM/api/getKategoriJenis?id_jenis_kategori=JK02")

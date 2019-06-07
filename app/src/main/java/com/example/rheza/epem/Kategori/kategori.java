@@ -136,7 +136,6 @@ public class kategori {
         Handler pdCancel = new Handler();
         pdCancel.postDelayed(pr, 3000);
 
-
     }
 
 
@@ -174,12 +173,13 @@ public void ViewKusen(final RecyclerView recyclerView, final Context mContext){
                 kats = response.body();
                 kategoriAdapter = new KategoriAdapter(mContext,kats);
                 recyclerView.setAdapter(kategoriAdapter);
+                Toast.makeText(mContext, "berazil", Toast.LENGTH_SHORT).show();
                 kategoriAdapter.notifyDataSetChanged();
             }
 
             @Override
             public void onFailure(Call<List<ListKat>> call, Throwable t) {
-
+                Toast.makeText(mContext, t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

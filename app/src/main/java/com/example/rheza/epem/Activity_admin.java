@@ -32,14 +32,7 @@ public class Activity_admin extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -58,8 +51,7 @@ public class Activity_admin extends AppCompatActivity {
         kategori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id_admin;
-                Bundle extras = getIntent().getExtras();
+
 
 
                 Intent intent = new Intent(Activity_admin.this , Activity_pilih.class);
@@ -71,8 +63,7 @@ public class Activity_admin extends AppCompatActivity {
         pesanan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id_admin;
-                Bundle extras = getIntent().getExtras();
+
 
 
                 Intent intent = new Intent(Activity_admin.this , Activity_pesanan.class);
@@ -83,8 +74,7 @@ public class Activity_admin extends AppCompatActivity {
         produk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id_admin;
-                Bundle extras = getIntent().getExtras();
+
 
                                Intent intent = new Intent(Activity_admin.this , Activity_produk.class);
 
@@ -94,8 +84,7 @@ public class Activity_admin extends AppCompatActivity {
         infoDiri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String id_admin;
-                Bundle extras = getIntent().getExtras();
+
 
                 Intent intent = new Intent(Activity_admin.this , Activity_dataDiri.class);
                 startActivity(intent);

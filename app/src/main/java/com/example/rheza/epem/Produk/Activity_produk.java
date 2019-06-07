@@ -38,6 +38,7 @@ import com.example.rheza.epem.Kategori.kategori;
 import com.example.rheza.epem.R;
 import com.example.rheza.epem.RegisterAPI;
 import com.example.rheza.epem.Value;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -63,19 +64,11 @@ public class Activity_produk extends AppCompatActivity {
 
     private final static int IMG_REQUEST = 999;
     private final static int Request_take = 0;
-    private Uri mUri;
-    private final static int Camera_pick = 1111;
-    private final static String Tag = Activity_produk.class.getSimpleName();
-    public final static int media_type = 1;
-    private Uri fileUri;
-    private String medaiPath;
-    private String mImageLocation = "";
-    public static final String Image_Directory_Name = "Android upload";
-    private String postPath;
 
 
 
-    private EditText et_idProduk , et_namaProduk , et_deskripsi;
+
+    private MaterialEditText et_idProduk , et_namaProduk , et_deskripsi;
     private Spinner spinnerProduk;
     private TextView textKategori;
     private ImageView uploadImage;
@@ -164,7 +157,8 @@ public class Activity_produk extends AppCompatActivity {
                 });
                 dialog.setNegativeButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
+                    public void onClick(DialogInterface dialogCancel, int which) {
+                        dialogCancel.dismiss();
                         if(TextUtils.isEmpty(et_namaProduk.getText())){
                             new AlertDialog.Builder(mContext)
                                     .setIcon(R.drawable.failed)
@@ -209,8 +203,8 @@ public class Activity_produk extends AppCompatActivity {
                     }
                 }).setPositiveButton("Batal", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialog, int which) {
-
+                    public void onClick(DialogInterface dialogCancel, int which) {
+                        dialogCancel.dismiss();
                     }
                 }).show();
 
@@ -288,8 +282,10 @@ public class Activity_produk extends AppCompatActivity {
     private void pilihFoto(){
         Intent intent = new Intent();
         intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, IMG_REQUEST);
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivityForResult(intent, IMG_REQUEST);
+        intent.setAction(Intent.ACTION_PICK);
+        startActivityForResult(intent , IMG_REQUEST);
     }
 
     @Override

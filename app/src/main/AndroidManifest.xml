@@ -22,20 +22,31 @@
         <activity
             android:name=".Activity_admin"
             android:label="DASHBOARD ADMIN"
-            android:theme="@style/AppTheme.NoActionBar" />
+             />
         <activity
             android:name=".Kategori.Activity_kategori"
-            android:label="Kategori" />
+            android:label="Kategori"
+            android:theme="@style/AppTheme." />
         <activity android:name=".Kategori.Activity_TambahKat" />
         <activity
             android:name=".Pesanan.Activity_pesanan"
-            android:label="PESANAN" />
+            android:label="Pesanan"
+            android:theme="@style/AppTheme." />
         <activity android:name=".Pesanan.Activity_TambahPes" />
-        <activity android:name=".InfoDiri.Activity_dataDiri" />
-        <activity android:name=".Produk.Activity_produk" />
+        <activity
+            android:name=".InfoDiri.Activity_dataDiri"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Produk.Activity_produk"
+            android:label="Porduk"
+            android:theme="@style/AppTheme." />
         <activity android:name=".Produk.Activity_tambahPro" />
         <activity android:name=".Testimoni.Activity_testimoni" />
-        <activity android:name=".Kategori2.Activity_pilih" />
+        <activity
+            android:name=".Kategori2.Activity_pilih"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Login.loginActivity" />
+        <activity android:name=".Login.daftarActivity"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kategori.Activity_TambahKat">
+    tools:context=".Login.loginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,42 +21,30 @@
 
 
 
-            <LinearLayout
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Spinner
-                    android:id="@+id/spinnerKategori"
-                    android:backgroundTint="@color/colorAccent"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_width="150dp"
-                    android:layout_marginLeft="18dp"
-                    android:layout_height="40dp"
-                    android:entries="@array/epem">
-                </Spinner>
-
-                <TextView
-                    android:id="@+id/textJenis"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="11dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginBottom="5dp"
-
-                    android:text="Jenis Kategori" />
-            </LinearLayout>
-
             <com.rengwuxian.materialedittext.MaterialEditText
-                android:id="@+id/sNama"
+                android:id="@+id/emailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:layout_margin="15dp"
-                android:hint="Nama Kategori"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                app:met_singleLineEllipsis="true"
+                android:layout_marginTop="5dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/passLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20sp"
+                android:textColorHint="@color/colorPrimary"
+                android:inputType="textPassword"
+                android:layout_margin="15dp"
+                android:hint="Password"
                 android:textColor="@color/colorPrimary"
                 android:layout_marginTop="5dp"/>
 

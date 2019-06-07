@@ -9,4 +9,8 @@
     <color name="grey">#fafafa</color>
     <color name="startblue">#096cdf</color>
     <color name="endblue">#0bcce6</color>
+    <color name="bottomText">#6b6b76</color>
+    <color name="efekRipple">#f816a463</color>
+    <color name="tombolLogin">#1fbad6</color>
+    <color name="tombolDaftar">#83838c</color>
 </resources>

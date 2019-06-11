@@ -27,9 +27,15 @@ public interface RegisterAPI {
                        @Field("id_jenis_kategori") String id_jenis_kategori,
                        @Field("nama_kategori") String nama_kategori);
 
+    @FormUrlEncoded
+    @POST("admin-epem/api/login")
+    Call<Value> Login(
+      @Field("email") String email,
+      @Field("password") String password
+    );
 
 
-    @GET("web_EPEM/api/getKategoriJenis?id_jenis_kategori=JK01")
+    @GET("admin-epem/api/getKategoriJenis?id_jenis_kategori=JK01")
     Call<List<ListKat>> percobaan();
 
     @GET("admin-epem/api/getKategoriJenis?id_jenis_kategori=JK02")
